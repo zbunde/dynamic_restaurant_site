@@ -31,7 +31,11 @@
   <img src="/images/food1.jpg">
 
   <dl>
-    <dt>Channa Masala - 5.95</dt>
+      <% [].each do|item| %>
+
+      <dt><%= item.name %>  </dt>
+      <dt><%= item.price %> </dt>
+
     <dd>Yummy goodness</dd>
     
     <dt>Chicken Tikka Masala - 5.95</dt>
@@ -50,3 +54,5 @@
 
 </body>
 </html>
+
+<% end %>
